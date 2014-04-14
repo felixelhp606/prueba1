@@ -1,0 +1,13 @@
+root { 
+    display: block;
+}
+table {border: 1px;
+       text-align: center;
+       background-color:white;}
+thead {color:black;
+       background-color: orange;}
+th {font-size: 24px;
+    color:black;
+    background-color: orange;}     
+tr {font-size: 18px;
+    color:black;}

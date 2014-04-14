@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 17</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/estilo.css" type="text/css">
+        <script type="text/javascript" src="js/validaciones.js"></script>
+    </head>
+    <body>
+     <form id="congresoform" action="enviado.html" method="post" onsubmit="return validar();">
+                    <fieldset>
+                        <legend>Registro de participantes</legend>
+                        <table>
+                            <tr>
+                                <td><label for="apefrm">Apellido:</label></td>
+                                <td><input name="apefrm" id="apefrm" type="text"></td>
+                                <td><div id="err1"  class="oculto">El campo no debe ser vacio o nulo</div></td>
+                            </tr>
+                            <tr>
+                                <td><label for="nomfrm">Nombre:</label></td>
+                                <td><input name="nomfrm" id="nomfrm" type="text"></td>
+                                <td><div id="err2"  class="oculto">El campo no debe ser vacio o nulo</div></td>
+                            </tr>
+                            <tr>
+                                <td><label for="edadfrm">Edad:</label></td>
+                                <td><input name="edadfrm" id="edadfrm" type="text"></td>
+                                <td><div id="err3" class="oculto">El campo no debe ser vacío o nulo.</div>
+                                    <div id="err4" class="oculto">El campo debe ser numerico.</div>
+                                    <div id="err5" class="oculto">El campo debe ser mayor que 0 y menor que 120</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="campo3"> Masculino: </label>
+                                    <input type="radio" value="M"  name="paramsex"id="semfrm" checked="true"/></td>
+                                <td><label for="campo4"> Femenino: </label>
+                                <input type="radio" value="F"  name="paramsex" id="seffrm"/></td>
+                            
+                            </tr>
+                            <tr>
+                                <td><label>Provincia:</label></td>
+                                <td><select id="provfrm" name="provfrm">
+                                        <option value="0" selected="true">- Seleccione una provincia -</option>
+                                        <option value="1">San Juan</option>
+                                        <option value="2">Santiago del Estero</option>
+                                        <option value="3">Tucuman</option>
+                                    </select></td>
+                                    <td><div id="err6" class="oculto">Debe seleccionar una provincia.</div></td>
+                            </tr>
+                            <tr>
+                                <td><label for="textofrm">Comentario:</label></td>
+                                <td><textarea name="textofrm" id="textofrm" onkeypress="return limita(15);"></textarea></td>
+                                <td><div id="err7" class="oculto">El campo no debe ser vacio o nulo</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit" value="Enviar"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>   
+        
+        <div>
+            <a href="index.html">Inicio</a>
+</div>
+    </body>
+</html>

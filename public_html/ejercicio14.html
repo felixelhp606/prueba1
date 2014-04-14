@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 14</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <script type="text/javascript">
+        function anade() {
+        var elemento = document.createElement("li");
+        var ele = document.getElementById("txt");
+        var texto = document.createTextNode(ele.value);
+        elemento.appendChild(texto);
+ 
+        var lista = document.getElementById("lista");
+        lista.appendChild(elemento);
+         }
+        </script>
+        
+    </head>
+    <body>
+    <h1>Lista de productos Escolares:</h1>
+    
+        <ul id="lista">
+
+        </ul>
+    
+        <div>
+            <input id="txt" type="text" value="Agregar Descripcion" maxlength="200">
+            <input type="button" value="Agregar a Lista" onclick="anade();">
+        </div>
+    
+        <br>    
+        <div>
+            <a href="index.html">Inicio</a>
+        </div>
+    </body>
+</html>

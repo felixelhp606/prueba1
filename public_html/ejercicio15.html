@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 15</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <script type="text/javascript">
+        function validafecha() {
+
+        var anio = document.getElementById("aaaa").value;
+        var mes = document.getElementById("mm").value;
+        var dia = document.getElementById("dd").value;
+        
+        if ((anio > 0)&&(mes > 0 && mes < 13)&&(dia > 0 && dia < 32)){
+            valor = new Date(anio, mes-1, dia);
+            alert(valor);
+        } else {
+                alert("FECHA INVALIDA");
+        }
+        
+         }
+        </script>
+        
+    </head>
+    <body>
+    <h1>Ingresar fecha a validar:</h1>
+    
+  
+        <div>
+            <input id="dd" type="text" value="DD" maxlength="2" width="20">
+            <input id="mm" type="text" value="MM" maxlength="2" width="20">
+            <input id="aaaa" type="text" value="AAAA" maxlength="4" width="40">
+            <input type="button" value="Validar Fecha" onclick="validafecha();">
+        </div>
+    
+        <br>    
+        <div>
+            <a href="index.html">Inicio</a>
+        </div>
+    </body>
+</html>
